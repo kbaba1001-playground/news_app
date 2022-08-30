@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:news_app/model/article_model.dart';
 
 class ArticlePage extends StatelessWidget {
@@ -60,7 +59,7 @@ class ArticlePage extends StatelessWidget {
               ),
               child: Text(
                 article.source.name,
-                style: GoogleFonts.lobster(
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 15,
                 ),
@@ -70,22 +69,22 @@ class ArticlePage extends StatelessWidget {
               height: 12.0,
             ),
             Text(
-              article.author,
-              style: GoogleFonts.cookie(
+              article.author ?? "no name",
+              style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 23.0,
                   color: Colors.blue),
             ),
             Text(
               article.publishedAt,
-              style: GoogleFonts.lobster(
+              style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 17.0,
                   color: Colors.red),
             ),
             Text(
-              article.content,
-              style: GoogleFonts.cookie(
+              article.content ?? "none",
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 26.0,
               ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:news_app/model/article_model.dart';
 import 'package:news_app/pages/articles_details_page.dart';
 
@@ -85,7 +84,7 @@ Widget customListTile(Article article, BuildContext context) {
           SizedBox(height: 30.0),
           Text(
             article.title,
-            style: GoogleFonts.cookie(
+            style: const TextStyle(
               fontSize: 40.0,
               fontWeight: FontWeight.bold,
               color: Colors.black,
